@@ -25,7 +25,7 @@ def is_nested(line):
     counter = 0
     while line:
         if line.startswith("(*"):
-            if "(*" in holdparen:
+            if "*)" in holdparen:
                 return counter
             token = line[:2]
         elif line.startswith("*)"):
